@@ -1,0 +1,105 @@
+
+header{
+    background-image: url(../images/Без\ имени-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+
+    .buttons{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .button-start {
+        background-color: #895be6;
+        color: black;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        padding: 20px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 3px;
+      }
+      
+      .active {
+        background-color: #591cb8;
+        font-weight: 900;
+        transition: font-weight 0.5s ;
+      }
+      .button-filter {
+        width: 55px;
+        height: 55px;
+        background-image: url(../images/start-down.jpg);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+    
+      button:hover {	
+        background-image: url(../images/hover-down.jpg);
+      }
+      .pressed {
+        width: 55px;
+        height: 55px;
+        transition: width 0.5s, height 0.5s;
+        background-image: url(../images/start-up.jpg);
+      }
+    
+      .pressed:hover {	
+        background-image: url(../images/hover-up.jpg);
+      }
+
+      .searchBlock{
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 200px;
+        justify-content: center;
+        .search{
+            border-radius: 100px;
+            padding: 10px;
+            border: none;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 500px;
+            width: 50%;
+            min-width: 300px;
+          }
+      }
+      .divRes{
+        color: white;
+        padding-top: 10px;
+    }
+  }
+main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, min-content);
+    text-align: center;
+    
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    margin-top: 50px;
+    width: 100%;
+    .country{
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/photo_2024-07-01_15-51-06.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        color: white;
+    }
+}
